@@ -44,21 +44,21 @@ The current Daymet NCSS has a size limit of 6GB for each single subset request. 
 
 ## Understanding the NCSS REST API
 
-Visit the Web Services page for further description of THREDDS, the NCSS GUI, and an explanation of bounding box results.
-In general, all Daymet data granules available through the NCSS follow this URL pattern:
+Visit the Daymet [Web Services](https://daymet.ornl.gov/web_services) page page for further description of THREDDS, the NCSS GUI, and an explanation of bounding box results. In general, all Daymet data granules available through the NCSS follow this URL pattern:
 
     https://thredds.daac.ornl.gov/thredds/ncss/grid/ornldaac/1328/`[YEAR]/daymet_v3_[DAYMETVAR]_[YEAR]_[region].nc4
 
 Where `[DAYMETVAR]` is:
 
-    Variable 	Description (units)
-    tmax 	Daily maximum 2-meter air temperature (°C)
-    tmin 	Daily minimum 2-meter air temperature (°C)
-    prcp 	Daily total precipitation (mm/day)
-    srad 	Incident shortwave radiation flux density (W/m2)
-    vp 	Water vapor pressure (Pa)
-    swe 	Snow water equivalent (kg/m2)
-    dayl 	Duration of the daylight period (seconds/day)
+| Variable | Description (units) |
+| ---- | ---- |
+| tmax | Daily maximum 2-meter air temperature (°C) |
+| tmin | Daily minimum 2-meter air temperature (°C) |
+| prcp | Daily total precipitation (mm/day) |
+| srad | Incident shortwave radiation flux density (W/m2) |
+| vp   | Water vapor pressure (Pa) |
+| swe  | Snow water equivalent (kg/m2) |
+| dayl | Duration of the daylight period (seconds/day) |
 
 `[YEAR]` is:
 
@@ -74,13 +74,14 @@ A full URL standard request from the NCCS service will involve the following par
 
 Where the parameters are:
 
-    Parameter 	Description
-    north 	The northern extent of the bounding box (latitude in decimal degrees) of the subset
-    west 	The western extent of the bounding box (longitude in decimal degrees) of the subset
-    east 	The eastern extent of the bounding box (longitude in decimal degrees) of the subset
-    south 	The southern extent of the bounding box (latitude in decimal degrees) of the subset
-    horizStride 	Will take every nth point (in both x and Y) of the gridded dataset. The default, "1", will take every point
-    time_start 	The beginning of the time range. Specify a time range subset in the form: yyyy '-' mm '-' dd 'T' hh ':' mm ':' ss Z
-    time_end 	The end of the time range. Specify a time range subset in the form: yyyy '-' mm '-' dd 'T' hh ':' mm ':' ss Z
-    timeStride 	Will take only every nth time in the available series on gridded datasets. The default, "1", will take every time step
-    accept 	The format of the subset data returned by the NCSS: "netcdf" for netCDF v3 format is the only option currently available
+| Parameter | Description |
+| ----- | ----- |
+| north | The northern extent of the bounding box (latitude in decimal degrees) of the subset |
+| west | The western extent of the bounding box (longitude in decimal degrees) of the subset |
+| east | The eastern extent of the bounding box (longitude in decimal degrees) of the subset |
+| south | The southern extent of the bounding box (latitude in decimal degrees) of the subset |
+| horizStride | Will take every nth point (in both x and Y) of the gridded dataset. The default, "1", will take every point |
+| time_start | The beginning of the time range. Specify a time range subset in the form: yyyy '-' mm '-' dd 'T' hh ':' mm ':' ss Z |
+| time_end | The end of the time range. Specify a time range subset in the form: yyyy '-' mm '-' dd 'T' hh ':' mm ':' ss Z |
+| timeStride | Will take only every nth time in the available series on gridded datasets. The default, "1", will take every time step |
+| accept | The format of the subset data returned by the NCSS: "netcdf" for netCDF v3 format is the only option currently available |
