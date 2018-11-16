@@ -47,9 +47,9 @@ The current Daymet NCSS has a size limit of 6GB for each single subset request. 
 Visit the Web Services page for further description of THREDDS, the NCSS GUI, and an explanation of bounding box results.
 In general, all Daymet data granules available through the NCSS follow this URL pattern:
 
-    https://thredds.daac.ornl.gov/thredds/ncss/grid/ornldaac/1328/[YEAR]/daymet_v3_[DAYMETVAR]_[YEAR]_[region].nc4
+    https://thredds.daac.ornl.gov/thredds/ncss/grid/ornldaac/1328/`[YEAR]/daymet_v3_[DAYMETVAR]_[YEAR]_[region].nc4
 
-Where DAYMETVAR is:
+Where `[DAYMETVAR]` is:
 
     Variable 	Description (units)
     tmax 	Daily maximum 2-meter air temperature (°C)
@@ -60,11 +60,11 @@ Where DAYMETVAR is:
     swe 	Snow water equivalent (kg/m2)
     dayl 	Duration of the daylight period (seconds/day)
 
-YEAR is:
+`[YEAR]` is:
 
     1980 - most recent full calendar year
 
-region is:
+`[region]` is:
 
     na (North America)
 
@@ -72,7 +72,7 @@ A full URL standard request from the NCCS service will involve the following par
 
     https://thredds.daac.ornl.gov/thredds/ncss/ornldaac/1328/1988/daymet_v3_[DAYMETVAR]_[YEAR]_[region].nc4?var=lat&var=lon&var=tmin&north=&west=&east=9&south=&disableProjSubset=on&horizStride=1&time_start=Z&time_end=&timeStride=&accept=netcdf
 
-Where Parameters are:
+Where the parameters are:
 
     Parameter 	Description
     north 	The northern extent of the bounding box (latitude in decimal degrees) of the subset
