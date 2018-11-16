@@ -62,11 +62,11 @@ Where `[DAYMETVAR]` is:
 
 `[YEAR]` is:
 
-    1980 - most recent full calendar year
+- 1980 - most recent full calendar year
 
 `[region]` is:
 
-    na (North America)
+- na (North America)
 
 A full URL standard request from the NCCS service will involve the following parameters:
 
