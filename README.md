@@ -1,8 +1,8 @@
 # Batch Subset and Download of Gridded netCDF Data - Daymet Example
 
-*Author: ORNL DAAC*
-*Date: November 5, 2018*
-*Contact for ORNL DAAC: uso@daac.ornl.gov*
+- *Author: ORNL DAAC*
+- *Date: November 5, 2018*
+- *Contact for ORNL DAAC: uso@daac.ornl.gov*
 
 **Keywords: web service, netCDF, RESTful API, Daymet, THREDDS, NCSS**
 
@@ -14,13 +14,10 @@ Example bash scripts are provided that automate spatial and/or temporal subsetti
 
 ## Source Data
 
-North American Daymet Files: https://thredds.daac.ornl.gov/thredds/catalog/ornldaac/1328/catalog.html
-
-All Daymet Data in THREDDS: https://thredds.daac.ornl.gov/thredds/catalogs/ornldaac/Regional_and_Global_Data/DAYMET_COLLECTIONS/DAYMET_COLLECTIONS.html
-
-Daymet Web Site: https://daymet.ornl.gov/
-
-ORNL DAAC THREDDS Datasets: https://thredds.daac.ornl.gov/thredds/catalog.html
+- North American Daymet Files: https://thredds.daac.ornl.gov/thredds/catalog/ornldaac/1328/catalog.html
+- All Daymet Data in THREDDS: https://thredds.daac.ornl.gov/thredds/catalogs/ornldaac/Regional_and_Global_Data/DAYMET_COLLECTIONS/DAYMET_COLLECTIONS.html
+- Daymet Web Site: https://daymet.ornl.gov/
+- ORNL DAAC THREDDS Datasets: https://thredds.daac.ornl.gov/thredds/catalog.html
 
 ## Additional Information
 
