@@ -26,6 +26,9 @@
 startyr=1980
 endyr=1982 
 
+# VARIABLES - Region - na is used a example. The complete list of regions is: na (North America), hi(Hawaii), pr(Puerto Rico)
+region="na"
+
 # VARIABLES - Daymet variables - tmin and tmax are used as examples, variables should be space separated. 
 # The complete list of Daymet variables is: tmin, tmax, prcp, srad, vp, swe, dayl
 var="tmin tmax"
@@ -44,9 +47,9 @@ echo $i
 	echo $par
 		
 		if [ $(( $i % 4 )) -eq 0  ]; then
-			wget -O ${par}_${i}subset.nc "http://thredds.daac.ornl.gov/thredds/ncss/grid/ornldaac/1328/${i}/daymet_v3_${par}_${i}_na.nc4?var=lat&var=lon&var=${par}&north=${north}&west=${west}&east=${east}&south=${south}&horizStride=1&time_start=${i}-01-01T12:00:00Z&time_end=${i}-12-30T12:00:00Z&timeStride=1&accept=netcdf"
+			wget -O ${par}_${i}subset.nc "http://thredds.daac.ornl.gov/thredds/ncss/grid/ornldaac/1840/daymet_v4_daily_${region}_${par}_${i}.nc?var=lat&var=lon&var=${par}&north=${north}&west=${west}&east=${east}&south=${south}&horizStride=1&time_start=${i}-01-01T12:00:00Z&time_end=${i}-12-30T12:00:00Z&timeStride=1&accept=netcdf"
 		else
-			wget -O ${par}_${i}subset.nc "http://thredds.daac.ornl.gov/thredds/ncss/grid/ornldaac/1328/${i}/daymet_v3_${par}_${i}_na.nc4?var=lat&var=lon&var=${par}&north=${north}&west=${west}&east=${east}&south=${south}&horizStride=1&time_start=${i}-01-01T12:00:00Z&time_end=${i}-12-31T12:00:00Z&timeStride=1&accept=netcdf"
+			wget -O ${par}_${i}subset.nc "http://thredds.daac.ornl.gov/thredds/ncss/grid/ornldaac/1840/daymet_v4_daily_${region}_${par}_${i}.nc?var=lat&var=lon&var=${par}&north=${north}&west=${west}&east=${east}&south=${south}&horizStride=1&time_start=${i}-01-01T12:00:00Z&time_end=${i}-12-31T12:00:00Z&timeStride=1&accept=netcdf"
 		fi
 	done;
 done
