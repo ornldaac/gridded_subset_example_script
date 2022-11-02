@@ -51,9 +51,9 @@ echo $i
 	for par in $var; do
 	echo $par
 		
-		wget -O ${par}_${i}_${startmn}subset.nc "https://thredds.daac.ornl.gov/thredds/ncss/grid/ornldaac/1840/daymet_v4_daily_${region}_${par}_${i}.nc?var=lat&var=lon&var=${par}&north=${north}&west=${west}&east=${east}&south=${south}&horizStride=1&time_start=${i}-${startmn}-${startday}T12:00:00Z&time_end=${i}-${endmn}-${endday}T12:00:00Z&timeStride=1&accept=netcdf"
+		wget -O ${par}_${i}_${startmn}subset.nc "https://thredds.daac.ornl.gov/thredds/ncss/grid/ornldaac/2129/daymet_v4_daily_${region}_${par}_${i}.nc?var=lat&var=lon&var=${par}&north=${north}&west=${west}&east=${east}&south=${south}&horizStride=1&time_start=${i}-${startmn}-${startday}T12:00:00Z&time_end=${i}-${endmn}-${endday}T12:00:00Z&timeStride=1&accept=netcdf"
 			# An example using cURL
-			# curl -o ${par}_${i}_${startmn}subset.nc "https://thredds.daac.ornl.gov/thredds/ncss/grid/ornldaac/1840/daymet_v4_daily_${region}_${par}_${i}.nc?var=lat&var=lon&var=${par}&north=${north}&west=${west}&east=${east}&south=${south}&horizStride=1&time_start=${i}-${startmn}-${startday}T12:00:00Z&time_end=${i}-${endmn}-${endday}T12:00:00Z&timeStride=1&accept=netcdf"
+			# curl -o ${par}_${i}_${startmn}subset.nc "https://thredds.daac.ornl.gov/thredds/ncss/grid/ornldaac/2129/daymet_v4_daily_${region}_${par}_${i}.nc?var=lat&var=lon&var=${par}&north=${north}&west=${west}&east=${east}&south=${south}&horizStride=1&time_start=${i}-${startmn}-${startday}T12:00:00Z&time_end=${i}-${endmn}-${endday}T12:00:00Z&timeStride=1&accept=netcdf"
 		
 	done;
 done
