@@ -14,7 +14,7 @@ Example bash scripts are provided that automate spatial and/or temporal subsetti
 
 ## Source Data
 
-- North American Daymet Files: https://thredds.daac.ornl.gov/thredds/catalog/ornldaac/1840/catalog.html 
+- North American Daymet Files: https://thredds.daac.ornl.gov/thredds/catalog/ornldaac/2129/catalog.html 
 - All Daymet Data in THREDDS: https://thredds.daac.ornl.gov/thredds/catalogs/ornldaac/Regional_and_Global_Data/DAYMET_COLLECTIONS/DAYMET_COLLECTIONS.html
 - Daymet Web Site: https://daymet.ornl.gov/
 - ORNL DAAC THREDDS Datasets: https://thredds.daac.ornl.gov/thredds/catalog.html
@@ -46,7 +46,7 @@ The current Daymet NCSS has a size limit of 6GB for each single subset request. 
 
 Visit the Daymet [Web Services](https://daymet.ornl.gov/web_services) page page for further description of THREDDS, the NCSS GUI, and an explanation of bounding box results. In general, all Daymet data granules available through the NCSS follow this URL pattern:
 
-    https://thredds.daac.ornl.gov/thredds/ncss/grid/ornldaac/1840/`daymet_v4_daily_[region]_[DAYMETVAR]_[YEAR].nc
+    https://thredds.daac.ornl.gov/thredds/ncss/grid/ornldaac/2129/`daymet_v4_daily_[region]_[DAYMETVAR]_[YEAR].nc
 
 Where `[DAYMETVAR]` is:
 
@@ -70,7 +70,7 @@ Where `[DAYMETVAR]` is:
 
 A full URL standard request from the NCCS service will involve the following parameters:
 
-    https://thredds.daac.ornl.gov/thredds/ncss/ornldaac/1840/daymet_v4_daily_[region]_[DAYMETVAR]_[YEAR].nc?var=lat&var=lon&var=[DAYMETVAR]&north=&west=&east=&south=&disableProjSubset=on&horizStride=1&time_start=Z&time_end=&timeStride=&accept=netcdf
+    https://thredds.daac.ornl.gov/thredds/ncss/ornldaac/2129/daymet_v4_daily_[region]_[DAYMETVAR]_[YEAR].nc?var=lat&var=lon&var=[DAYMETVAR]&north=&west=&east=&south=&disableProjSubset=on&horizStride=1&time_start=Z&time_end=&timeStride=&accept=netcdf
 
 
 Where the parameters are:
